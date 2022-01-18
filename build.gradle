@@ -1,0 +1,30 @@
+plugins {
+    id 'org.jetbrains.intellij' version '1.3.0'
+    id 'java'
+}
+
+group 'com.mcritic'
+version '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['resources']
+        }
+    }
+}
+
+intellij {
+    version = '2020.3'
+    updateSinceUntilBuild = false
+}

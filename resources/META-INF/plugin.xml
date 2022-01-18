@@ -1,0 +1,27 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>IntelliJIdeaBug</name>
+  <version>1.0</version>
+  <vendor email="mcritic@gmail.com" >YourCompany</vendor>
+
+  <description>"adsf"</description>
+
+  <change-notes></change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="mcritic" icon="/icons/logo.svg" anchor="right"
+                factoryClass="com.mcritic.idea.plugin.windows.PluginToolWindowFactory"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>
